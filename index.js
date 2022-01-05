@@ -2,7 +2,7 @@ const fs = require('fs');
 const { Client, Collection, Intents, ReactionUserManager } = require('discord.js');
 const { token } = require('./config.json');
 
-const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
+const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_VOICE_STATES] });
 module.exports = {client};
 
 client.commands = new Collection();

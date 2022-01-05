@@ -43,7 +43,7 @@ module.exports = {
             if (!interaction.isButton()) return;
             
             else if (jsonData.Dag !== "") {
-                interaction.reply("Er is al een bestelling actief! Gebruik /deletebestelling` om deze te verwijderen")
+                interaction.reply("Er is al een bestelling actief! Gebruik `/deletebestelling` om deze te verwijderen")
             }
             
             else {
