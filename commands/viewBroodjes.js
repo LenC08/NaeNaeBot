@@ -11,9 +11,12 @@ function getEmbed() {
     
         if (jsonData.bestelling.length === 0) {
             embed.addField("Er zijn nog geen bestellingen toegevoegd", "Gebruik `/addbestelling` om er toe te voegen!")
-        } else for (var i = 0; i < Object.keys(jsonData.bestelling).length; i++) {
-          embed.addField("\u200B", "**" + jsonData.bestelling[i].name + "** ~~ " + jsonData.bestelling[i].value)
-    }
+        } else {
+                let lijst = ""
+                for (var i = 0; i < Object.keys(jsonData.bestelling).length; i++) {
+                lijst = lijst + "**" + jsonData.bestelling[i].name + "** \xa0\xa0\ ◆ \xa0\xa0\ " + jsonData.bestelling[i].value + "\n"
+    } embed.addField("\u200B", lijst)
+}
 
      let randomNr = Math.floor(Math.random() * 3)
 

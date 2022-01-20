@@ -1,5 +1,29 @@
 {
-  "Dag": "",
-  "bestelling": []
+  "Dag": "Dinsdag",
+  "bestelling": [
+    {
+      "name": "Len#9062",
+      "value": "neger"
+    },
+    {
+      "name": "Len#9062",
+      "value": "eee"
+    },
+    {
+      "name": "Len#9062",
+      "value": "oeoe"
+    },
+    {
+      "name": "ouagadougou",
+      "value": "naenae"
+    },
+    {
+      "name": "Len",
+      "value": "nerger"
+    },
+    {
+      "name": "<@!260764377127452673>",
+      "value": "uwu"
+    }
+  ]
 }
-

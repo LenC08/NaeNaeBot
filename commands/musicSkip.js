@@ -1,5 +1,6 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const {
+	AudioPlayerStatus,
 	StreamType,
 	createAudioPlayer,
 	createAudioResource,
@@ -13,7 +14,21 @@ function playAudio() {
     const player = createAudioPlayer(); 
     player.play(resource);
     music.VoiceConnection.subscribe(player);
+        player.on(AudioPlayerStatus.Idle, () => {
+            if (music.queue.length === 1) {
+                music.queue.shift()
+                music.VoiceConnection.destroy()               
+            } else {
+                module.exports.queue.shift()
+                console.log(module.exports.queue) 
+                playAudio()                
+            }            
+        }
+        )
+
 }
+
+
 
 module.exports = {
 	data: new SlashCommandBuilder()

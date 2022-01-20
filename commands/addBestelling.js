@@ -13,8 +13,9 @@ module.exports = {
     function naam() {
         if (interaction.options.getString('voor')) {
              return interaction.options.getString('voor')
-        } else return interaction.user.tag
+        } else return interaction.user.username
     }
+    console.log(naam())
 
         const broodje = interaction.options.getString('broodje');
         

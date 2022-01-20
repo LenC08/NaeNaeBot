@@ -1,6 +1,6 @@
 const fs = require('fs');
-const { Client, Collection, Intents, ReactionUserManager } = require('discord.js');
-const { token } = require('./config.json');
+const { Client, Collection, Intents} = require('discord.js');
+const { token, guildId } = require('./config.json');
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_VOICE_STATES] });
 module.exports = {client};
@@ -42,6 +42,23 @@ for (const file of eventFiles) {
 	}
 }
 
+const activities = [
+	"met uw mama",
+	"met uw papa",
+	"met uw zus",
+	"met kleine kindjes",
+  ];
+  
+  client.on("ready", () => {
+	// run every 10 seconds
+	setInterval(() => {
+	  // generate random number between 1 and list length.
+	  const randomIndex = Math.floor(Math.random() * (activities.length - 1) + 1);
+	  const newActivity = activities[randomIndex];
+  
+	  client.user.setActivity(newActivity);
+	}, 10000);
+  });
 
 
-client.login(token);
+client.login(token); 

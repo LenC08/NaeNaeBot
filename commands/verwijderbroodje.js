@@ -13,7 +13,7 @@ module.exports = {
    
         function getName() {
         if (!interaction.options.getString('van')) {
-             return interaction.user.tag
+             return interaction.user.username
         } else return interaction.options.getString('van')
     }
       

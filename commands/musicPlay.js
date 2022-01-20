@@ -79,6 +79,7 @@ console.log(module.exports.queue, "1")
             
             player.on(AudioPlayerStatus.Idle, () => {
             if (module.exports.queue.length === 1) {
+                module.exports.queue.shift()
                 connection.destroy()               
             } else {
                 module.exports.queue.shift()
