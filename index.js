@@ -1,8 +1,9 @@
 const fs = require('fs');
 const { Client, Collection, Intents} = require('discord.js');
 const { token, guildId } = require('./config.json');
+const jsonData = require("./bestelling.json")
 
-const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_VOICE_STATES] });
+const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_VOICE_STATES, Intents.FLAGS.GUILD_MEMBERS] });
 module.exports = {client};
 
 client.commands = new Collection();
@@ -12,6 +13,7 @@ for (const file of commandFiles) {
 	const command = require(`./commands/${file}`);
 	client.commands.set(command.data.name, command);
 }
+
 
 
 client.on('interactionCreate', async interaction => {
@@ -27,6 +29,43 @@ client.on('interactionCreate', async interaction => {
 		console.error(error);
 		return interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
 	}
+});
+
+
+//Button eventlistener
+client.on('interactionCreate', async interaction => {
+	
+	if (!interaction.isButton()) return;
+	
+	if (interaction.customId === "Maandag" || interaction.customId === "Dinsdag" || interaction.customId === "Donderdag" || interaction.customId === "Vrijdag") {
+	
+		//broodjesfunctie
+	
+		if (jsonData.Dag !== "") {
+		interaction.reply("Er is al een bestelling actief! Gebruik `/deletebestelling` om deze te verwijderen")
+	}
+	
+	else {
+		const finished = (error) => {
+			if (error) {
+				console.error(error)
+				return
+			}
+		}
+
+		jsonData.Dag = interaction.customId
+		const Data = JSON.stringify(jsonData, null, 2)
+		fs.writeFile("./bestelling.json", Data, finished)
+		
+		await interaction.reply("Bestelling voor **" + interaction.customId + "** gemaakt, gebruik `/addbroodje` om een broodje toe te voegen!")   
+	}
+	//Voting functie
+	} else {
+		interaction.reply(interaction.customId)
+	}
+
+	
+	
 });
 
 

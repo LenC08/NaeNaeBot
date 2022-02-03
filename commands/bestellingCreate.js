@@ -1,8 +1,7 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 let { MessageActionRow, MessageButton } = require('discord.js');
-const {client} = require("../index.js");
 const fs = require('fs');
-const jsonData = require("../bestelling.json")
+
 
 
     let Maandag = new MessageButton()
@@ -38,30 +37,7 @@ module.exports = {
             
     
 };
-        client.on('interactionCreate', async interaction => {
-	
-            if (!interaction.isButton()) return;
-            
-            else if (jsonData.Dag !== "") {
-                interaction.reply("Er is al een bestelling actief! Gebruik `/deletebestelling` om deze te verwijderen")
-            }
-            
-            else {
-                const finished = (error) => {
-                    if (error) {
-                        console.error(error)
-                        return
-                    }
-                }
 
-                jsonData.Dag = interaction.customId
-                const Data = JSON.stringify(jsonData, null, 2)
-                fs.writeFile("./bestelling.json", Data, finished)
-                
-                await interaction.reply("Bestelling voor **" + interaction.customId + "** gemaakt, gebruik `/addbroodje` om een broodje toe te voegen!")   
-            }
-            
-});
 
 
 
