@@ -1,227 +1,326 @@
 [
   {
     "guildId": "760560439888969789",
-    "joinedTimestamp": 1643821502202,
+    "joinedTimestamp": 1654078812031,
     "premiumSinceTimestamp": null,
-    "deleted": false,
-    "nickname": "Poopoosniffer420",
+    "nickname": null,
     "pending": false,
+    "communicationDisabledUntilTimestamp": 1671484069236,
     "userId": "260764377127452673",
-    "displayName": "Poopoosniffer420",
+    "avatar": null,
+    "displayName": "Len",
     "roles": [
       "934507439468998688",
+      "989834630507147294",
+      "1013936304796475402",
       "760560439888969789"
-    ]
+    ],
+    "avatarURL": null,
+    "displayAvatarURL": "https://cdn.discordapp.com/avatars/260764377127452673/28c0f18ca3df5bc52abec4a7161c49b9.webp"
   },
   {
     "guildId": "760560439888969789",
     "joinedTimestamp": 1601402139433,
     "premiumSinceTimestamp": null,
-    "deleted": false,
-    "nickname": "xXPowfuHater69Xx",
+    "nickname": "220k 🪖",
     "pending": false,
+    "communicationDisabledUntilTimestamp": null,
     "userId": "323345531764080640",
-    "displayName": "xXPowfuHater69Xx",
+    "avatar": null,
+    "displayName": "220k 🪖",
     "roles": [
       "851768816518430760",
+      "989834630507147294",
       "760560439888969789"
-    ]
+    ],
+    "avatarURL": null,
+    "displayAvatarURL": "https://cdn.discordapp.com/avatars/323345531764080640/e3b00ef86b0adfde96187562fa7a0b6f.webp"
   },
   {
     "guildId": "760560439888969789",
     "joinedTimestamp": 1614981465268,
     "premiumSinceTimestamp": null,
-    "deleted": false,
     "nickname": null,
     "pending": false,
+    "communicationDisabledUntilTimestamp": null,
     "userId": "340126430761451522",
+    "avatar": null,
     "displayName": "Barack Obama",
     "roles": [
       "910586465443000320",
       "760560439888969789"
-    ]
+    ],
+    "avatarURL": null,
+    "displayAvatarURL": "https://cdn.discordapp.com/avatars/340126430761451522/ad51a16fb0360e9876ff6e3b35d6ab71.webp"
   },
   {
     "guildId": "760560439888969789",
-    "joinedTimestamp": 1642604179655,
-    "premiumSinceTimestamp": 1643129923991,
-    "deleted": false,
-    "nickname": null,
+    "joinedTimestamp": 1645553264696,
+    "premiumSinceTimestamp": null,
+    "nickname": "tollie trekbeer",
     "pending": false,
+    "communicationDisabledUntilTimestamp": null,
     "userId": "456096530701484034",
-    "displayName": "Jef",
+    "avatar": null,
+    "displayName": "tollie trekbeer",
     "roles": [
-      "809500580548575244",
-      "855863208703033345",
+      "934138689905381437",
+      "989834630507147294",
+      "1013936304796475402",
       "760560439888969789"
-    ]
+    ],
+    "avatarURL": null,
+    "displayAvatarURL": "https://cdn.discordapp.com/avatars/456096530701484034/57aa097d7742b4569a335641ee4ce7f5.webp"
   },
   {
     "guildId": "760560439888969789",
-    "joinedTimestamp": 1642603715031,
+    "joinedTimestamp": 1656437254696,
     "premiumSinceTimestamp": null,
-    "deleted": false,
-    "nickname": "SmellyBalls2012",
+    "nickname": "SmellyBalls 🍑",
     "pending": false,
+    "communicationDisabledUntilTimestamp": null,
     "userId": "495661211770290186",
-    "displayName": "SmellyBalls2012",
+    "avatar": null,
+    "displayName": "SmellyBalls 🍑",
     "roles": [
-      "856558459965145108",
+      "851768816518430760",
+      "859495279748972604",
       "760560439888969789"
-    ]
+    ],
+    "avatarURL": null,
+    "displayAvatarURL": "https://cdn.discordapp.com/avatars/495661211770290186/8523a6a9679550bb29b8bfaf3c1fbd9a.webp"
   },
   {
     "guildId": "760560439888969789",
-    "joinedTimestamp": 1642888078625,
+    "joinedTimestamp": 1647551915557,
     "premiumSinceTimestamp": null,
-    "deleted": false,
-    "nickname": "nicolo small picolo",
+    "nickname": "flietertje",
     "pending": false,
+    "communicationDisabledUntilTimestamp": 1672477389993,
     "userId": "503159248616685568",
-    "displayName": "nicolo small picolo",
+    "avatar": null,
+    "displayName": "flietertje",
     "roles": [
       "855863208703033345",
+      "859495279748972604",
+      "910587245474484224",
+      "933697582562177034",
+      "934138689905381437",
+      "934139933902389308",
+      "934507439468998688",
+      "989834630507147294",
+      "1010624446178001036",
+      "1013936304796475402",
       "760560439888969789"
-    ]
+    ],
+    "avatarURL": null,
+    "displayAvatarURL": "https://cdn.discordapp.com/avatars/503159248616685568/34d1ae76b22291e5fadad82dcf1fc559.webp"
   },
   {
     "guildId": "760560439888969789",
-    "joinedTimestamp": 1642786361274,
+    "joinedTimestamp": 1671554578872,
     "premiumSinceTimestamp": null,
-    "deleted": false,
-    "nickname": "Dickplay|Foreplay",
-    "pending": false,
-    "userId": "591679522169159682",
-    "displayName": "Dickplay|Foreplay",
-    "roles": [
-      "855863208703033345",
-      "760560439888969789"
-    ]
-  },
-  {
-    "guildId": "760560439888969789",
-    "joinedTimestamp": 1643816649927,
-    "premiumSinceTimestamp": null,
-    "deleted": false,
     "nickname": null,
     "pending": false,
-    "userId": "616300691975307275",
-    "displayName": "JoBRG",
+    "communicationDisabledUntilTimestamp": null,
+    "userId": "591679522169159682",
+    "avatar": null,
+    "displayName": "DOplay",
     "roles": [
+      "855863208703033345",
+      "859495279748972604",
+      "910587245474484224",
+      "933697582562177034",
+      "934138689905381437",
+      "934139933902389308",
+      "989834630507147294",
+      "1010624446178001036",
       "760560439888969789"
-    ]
+    ],
+    "avatarURL": null,
+    "displayAvatarURL": "https://cdn.discordapp.com/avatars/591679522169159682/0f5784171fe6554189e99744ee74d3c5.webp"
+  },
+  {
+    "guildId": "760560439888969789",
+    "joinedTimestamp": 1649106032435,
+    "premiumSinceTimestamp": null,
+    "nickname": "The throat goat",
+    "pending": false,
+    "communicationDisabledUntilTimestamp": null,
+    "userId": "616300691975307275",
+    "avatar": null,
+    "displayName": "The throat goat",
+    "roles": [
+      "855863208703033345",
+      "910587245474484224",
+      "933697582562177034",
+      "934139933902389308",
+      "989834630507147294",
+      "760560439888969789"
+    ],
+    "avatarURL": null,
+    "displayAvatarURL": "https://cdn.discordapp.com/avatars/616300691975307275/e5e2a19c0d228597a007160d195fa268.webp"
   },
   {
     "guildId": "760560439888969789",
     "joinedTimestamp": 1642587653584,
     "premiumSinceTimestamp": null,
-    "deleted": false,
-    "nickname": null,
+    "nickname": "BDSM Bessemans",
     "pending": false,
+    "communicationDisabledUntilTimestamp": null,
     "userId": "656932655711125506",
-    "displayName": "Tim.",
+    "avatar": null,
+    "displayName": "BDSM Bessemans",
     "roles": [
+      "851768816518430760",
       "856558459965145108",
       "760560439888969789"
-    ]
+    ],
+    "avatarURL": null,
+    "displayAvatarURL": "https://cdn.discordapp.com/avatars/656932655711125506/256a9277aba7a235dd143b0c17a77065.webp"
   },
   {
     "guildId": "760560439888969789",
-    "joinedTimestamp": 1641734578678,
+    "joinedTimestamp": 1645551657608,
     "premiumSinceTimestamp": null,
-    "deleted": false,
-    "nickname": null,
+    "nickname": "balloze befbever",
     "pending": false,
+    "communicationDisabledUntilTimestamp": null,
     "userId": "688098416022126691",
-    "displayName": "Anniek",
+    "avatar": null,
+    "displayName": "balloze befbever",
     "roles": [
-      "910587245474484224",
+      "855863208703033345",
+      "933697582562177034",
+      "934138689905381437",
+      "989834630507147294",
       "760560439888969789"
-    ]
+    ],
+    "avatarURL": null,
+    "displayAvatarURL": "https://cdn.discordapp.com/avatars/688098416022126691/581f646a76df5bd2a6515d5bb83d02ec.webp"
   },
   {
     "guildId": "760560439888969789",
     "joinedTimestamp": 1640022815822,
     "premiumSinceTimestamp": null,
-    "deleted": false,
-    "nickname": null,
+    "nickname": "Hanne Keuken xD",
     "pending": false,
+    "communicationDisabledUntilTimestamp": null,
     "userId": "688099355516862497",
-    "displayName": "hanne.ceunen",
+    "avatar": null,
+    "displayName": "Hanne Keuken xD",
     "roles": [
       "910587245474484224",
       "760560439888969789"
-    ]
+    ],
+    "avatarURL": null,
+    "displayAvatarURL": "https://cdn.discordapp.com/embed/avatars/0.png"
   },
   {
     "guildId": "760560439888969789",
     "joinedTimestamp": 1642011736451,
     "premiumSinceTimestamp": null,
-    "deleted": false,
     "nickname": null,
     "pending": false,
+    "communicationDisabledUntilTimestamp": null,
     "userId": "688100808839135245",
+    "avatar": null,
     "displayName": "Jana",
     "roles": [
       "910587245474484224",
       "760560439888969789"
-    ]
+    ],
+    "avatarURL": null,
+    "displayAvatarURL": "https://cdn.discordapp.com/avatars/688100808839135245/d772bf866dc924be38c548ced9fd9e27.webp"
   },
   {
     "guildId": "760560439888969789",
     "joinedTimestamp": 1640023285764,
     "premiumSinceTimestamp": null,
-    "deleted": false,
-    "nickname": "Len",
+    "nickname": "poffer",
     "pending": false,
+    "communicationDisabledUntilTimestamp": 1649190664534,
     "userId": "688144294355140933",
-    "displayName": "Len",
+    "avatar": null,
+    "displayName": "poffer",
     "roles": [
       "859495279748972604",
       "910587245474484224",
+      "989834630507147294",
       "760560439888969789"
-    ]
+    ],
+    "avatarURL": null,
+    "displayAvatarURL": "https://cdn.discordapp.com/avatars/688144294355140933/bcfbe4f8e3da33e41b19bf70e3d03634.webp"
   },
   {
     "guildId": "760560439888969789",
     "joinedTimestamp": 1630942152790,
     "premiumSinceTimestamp": null,
-    "deleted": false,
     "nickname": "meng meng",
     "pending": false,
+    "communicationDisabledUntilTimestamp": 1640099744000,
     "userId": "760481048713756712",
+    "avatar": null,
     "displayName": "meng meng",
     "roles": [
       "851768816518430760",
       "760560439888969789"
-    ]
+    ],
+    "avatarURL": null,
+    "displayAvatarURL": "https://cdn.discordapp.com/avatars/760481048713756712/a6be5646d295509b50f26cb3eff3ccb6.webp"
+  },
+  {
+    "guildId": "760560439888969789",
+    "joinedTimestamp": 1648387341925,
+    "premiumSinceTimestamp": null,
+    "nickname": "Nopie leeuw",
+    "pending": false,
+    "communicationDisabledUntilTimestamp": 1661855580696,
+    "userId": "770607588361895957",
+    "avatar": null,
+    "displayName": "Nopie leeuw",
+    "roles": [
+      "910587245474484224",
+      "933697582562177034",
+      "989834630507147294",
+      "760560439888969789"
+    ],
+    "avatarURL": null,
+    "displayAvatarURL": "https://cdn.discordapp.com/avatars/770607588361895957/56caa575ec995e67899ef807f0befca8.webp"
   },
   {
     "guildId": "760560439888969789",
     "joinedTimestamp": 1616276745863,
     "premiumSinceTimestamp": null,
-    "deleted": false,
     "nickname": null,
     "pending": false,
+    "communicationDisabledUntilTimestamp": null,
     "userId": "772178747574059008",
+    "avatar": null,
     "displayName": "lars s",
     "roles": [
       "910587245474484224",
       "760560439888969789"
-    ]
+    ],
+    "avatarURL": null,
+    "displayAvatarURL": "https://cdn.discordapp.com/embed/avatars/1.png"
   },
   {
     "guildId": "760560439888969789",
     "joinedTimestamp": 1641940836744,
     "premiumSinceTimestamp": null,
-    "deleted": false,
     "nickname": null,
     "pending": false,
+    "communicationDisabledUntilTimestamp": null,
     "userId": "773599928617271356",
+    "avatar": null,
     "displayName": "xxselenaxx",
     "roles": [
       "910587245474484224",
+      "989834630507147294",
       "760560439888969789"
-    ]
+    ],
+    "avatarURL": null,
+    "displayAvatarURL": "https://cdn.discordapp.com/avatars/773599928617271356/0ab7580aed962d69b79bdfbb8b6441d8.webp"
   }
 ]
