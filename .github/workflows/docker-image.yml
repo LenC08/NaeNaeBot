@@ -17,9 +17,18 @@ jobs:
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
+    - 
+      name: Increment Semantic Version
+      uses: christian-draeger/increment-semantic-version@1.1.0
+      with:
+        current-version: '1.0.0'
+        version-fragment: 'bug'
     -
       name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v2
+    - 
+      name: Do something with your bumped release version
+      run: echo ${{ steps.bump_version.outputs.next-version }}
     -
       name: Build and push
       uses: docker/build-push-action@v4
