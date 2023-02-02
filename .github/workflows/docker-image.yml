@@ -21,7 +21,7 @@ jobs:
       name: Docker Latest Image
       uses: shrink/actions-docker-latest-image@v1
       with:
-        repository: 'docker.pkg.github.com/github/semantic/semantic'
+        repository: 'hilvenmatz/naenaebot'
     - 
       name: Increment Semantic Version
       uses: christian-draeger/increment-semantic-version@1.1.0
