@@ -17,17 +17,6 @@ jobs:
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
-    - 
-      name: Docker Latest Image
-      uses: shrink/actions-docker-latest-image@v1
-      with:
-        repository: 'hilvenmatz/naenaebot'
-    - 
-      name: Increment Semantic Version
-      uses: christian-draeger/increment-semantic-version@1.1.0
-      with:
-        current-version: ${{ steps.latest.outputs.tag }}
-        version-fragment: 'bug'
     -
       name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v2
@@ -38,4 +27,4 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: hilvenmatz/naenaebot:${{ steps.bump_version.outputs.next-version }}
+        tags: hilvenmatz/naenaebot:1.0.0
