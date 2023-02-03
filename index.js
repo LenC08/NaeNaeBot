@@ -78,10 +78,8 @@ for (const file of eventFiles) {
 }
 
 const activities = [
-    "met uw mama",
-    "met uw papa",
-    "met uw zus",
-    "met kleine kindjes",
+    "uwu",
+	"owo",
 ];
 
 client.on("ready", () => {
