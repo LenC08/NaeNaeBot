@@ -27,4 +27,4 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: hilvenmatz/naenaebot:1.0.1
+        tags: hilvenmatz/naenaebot:1.0.2
