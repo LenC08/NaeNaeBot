@@ -38,4 +38,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: "lenc08/naenaebot:v0.0.1"
+          tags: "ghcr.io/lenc08/naenaebot:v0.0.1"
