@@ -6,6 +6,6 @@ module.exports = {
 		.setDescription('replies with pong'),
 	async execute(interaction) {
 		const sent = await interaction.reply({ content: 'Pinging...', fetchReply: true });
-		await interaction.reply(`🏓Latency is ${sent.createdTimestamp - interaction.createdTimestamp}ms. API Latency is ${Math.round(client.ws.ping)}ms`);
+		await interaction.editReply(`🏓Latency is ${sent.createdTimestamp - interaction.createdTimestamp}ms. API Latency is ${Math.round(client.ws.ping)}ms`);
 	},
 };
