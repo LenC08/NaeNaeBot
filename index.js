@@ -78,8 +78,8 @@ for (const file of eventFiles) {
 }
 
 const activities = [
-    "met lennetje zijn balletjes",
-	"met lennetje zijn prostaatje",
+    "el senior de la nocheeeee", 
+	"quran"
 ];
 
 client.on("ready", () => {
