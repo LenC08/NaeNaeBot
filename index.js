@@ -94,5 +94,4 @@ client.on("ready", () => {
     }, 10000);
 });
 
-console.log(process.env.TOKEN)
 client.login(process.env.TOKEN);
