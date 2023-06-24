@@ -88,7 +88,7 @@ client.on("ready", () => {
     setInterval(() => {
         // generate random number between 1 and list length.
         const randomIndex = Math.floor(Math.random() * (activities.length - 1) + 1);
-        const newActivity = activities[randomIndex];
+        const newActivity = activities[randomIndex - 1];
 
         client.user.setActivity(newActivity);
     }, 10000);
