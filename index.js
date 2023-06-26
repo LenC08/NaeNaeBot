@@ -78,11 +78,14 @@ for (const file of eventFiles) {
 }
 
 setInterval(async function() {
-    const now = new Date()
-    let timeUntil = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 19, 27, 0, 0).getTime() - now.getTime();
+    let now = new Date()
+    let timeUntilEvening = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 17, 27, 0, 0).getTime() - now.getTime();
+    let timeUntilMorning = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 5, 27, 0, 0).getTime() - now.getTime();
+    let timeUntil = (timeUntilEvening < timeUntilMorning) ? timeUntilEvening : timeUntilMorning	
+	
     if (timeUntil < 0 && timeUntil > -60000) {
         const user =  await client.users.fetch("251084760825331713")
-        user.send("wysi")
+        user.send("wysi https://tenor.com/view/aireu-wysi-osu-727-cookiezi-gif-20763403")
     }
 }, 60000)
 
