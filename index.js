@@ -86,13 +86,14 @@ setInterval(async function() {
     if (timeUntil < 0 && timeUntil > -60000) {
         const user =  await client.users.fetch("251084760825331713")
         user.send("wysi https://tenor.com/view/aireu-wysi-osu-727-cookiezi-gif-20763403")
+	client.channels.cache.get("1122975932890755215").send("wysi https://tenor.com/view/aireu-wysi-osu-727-cookiezi-gif-20763403")
     }
 }, 60000)
 
 const activities = [
     "el senior de la nocheeeee", 
-	"quran",
-	"met jef zijn balletjes"
+    "el terror de la nocheeeee",
+    "busssssssssssssssssssssssssssssssssssssssssssssssss"
 ];
 
 client.on("ready", () => {
