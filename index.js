@@ -77,6 +77,15 @@ for (const file of eventFiles) {
     }
 }
 
+setInterval(async function() {
+    const now = new Date()
+    let timeUntil = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 19, 27, 0, 0).getTime() - now.getTime();
+    if (timeUntil < 0 && timeUntil > -60000) {
+        const user =  await client.users.fetch("251084760825331713")
+        user.send("wysi")
+    }
+}, 60000)
+
 const activities = [
     "el senior de la nocheeeee", 
 	"quran",
