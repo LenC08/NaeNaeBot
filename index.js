@@ -2,8 +2,6 @@ const fs = require('fs');
 const {Client, Collection, Intents} = require('discord.js');
 const jsonData = require("./bestelling.json")
 
-require('dotenv').config()
-
 const client = new Client({intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_VOICE_STATES, Intents.FLAGS.GUILD_MEMBERS]});
 module.exports = {client};
 
@@ -77,10 +75,22 @@ for (const file of eventFiles) {
     }
 }
 
+//727
+
+setInterval(async function() {
+    const now = new Date()
+    let timeUntil = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 21, 49, 0, 0).getTime() - now.getTime();
+    if (timeUntil < 0 && timeUntil > -60000) {
+        const user =  await client.users.fetch("251084760825331713")
+        user.send("wysi")
+        client.channels.cache.get("881492781611229238").send("test")
+    }
+}, 60000)
+
 const activities = [
     "el senior de la nocheeeee", 
-	"quran",
-	"met jef zijn balletjes"
+	"el terror de la nocheeeee",
+    "busssssssssssssssssssssssssssssssssssssssssssssssss"
 ];
 
 client.on("ready", () => {
@@ -94,4 +104,4 @@ client.on("ready", () => {
     }, 10000);
 });
 
-client.login(process.env.TOKEN);
+client.login("OTY5NjQ4NjUxNjk1NjkzODQ1.GSw21o.93bfbs_ajQUkLPc08a_hIl7Zi_PVXaQONgaIpM");
