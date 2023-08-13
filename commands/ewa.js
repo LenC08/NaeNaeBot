@@ -5,6 +5,6 @@ module.exports = {
 		.setName('ewa')
 		.setDescription('het leven is niet eerlijk nee :pensive:'),
 	async execute(interaction) {
-		return interaction.reply('ja');
+		return interaction.reply('ja <https://www.youtube.com/watch?v=m4QO5jyEw2E>');
 	},
 };

@@ -75,15 +75,16 @@ for (const file of eventFiles) {
     }
 }
 
-//727
-
 setInterval(async function() {
-    const now = new Date()
-    let timeUntil = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 21, 49, 0, 0).getTime() - now.getTime();
+    let now = new Date()
+    let timeUntilEvening = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 17, 27, 0, 0).getTime() - now.getTime();
+    let timeUntilMorning = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 5, 27, 0, 0).getTime() - now.getTime();
+    let timeUntil = (timeUntilEvening < timeUntilMorning) ? timeUntilEvening : timeUntilMorning	
+	
     if (timeUntil < 0 && timeUntil > -60000) {
         const user =  await client.users.fetch("251084760825331713")
-        user.send("wysi")
-        client.channels.cache.get("881492781611229238").send("test")
+        user.send("wysi https://tenor.com/view/aireu-wysi-osu-727-cookiezi-gif-20763403")
+	client.channels.cache.get("1122975932890755215").send("wysi https://tenor.com/view/aireu-wysi-osu-727-cookiezi-gif-20763403")
     }
 }, 60000)
 
@@ -97,8 +98,8 @@ client.on("ready", () => {
     // run every 10 seconds
     setInterval(() => {
         // generate random number between 1 and list length.
-        const randomIndex = Math.floor(Math.random() * (activities.length - 1) + 1);
-        const newActivity = activities[randomIndex - 1];
+        const randomIndex = Math.floor(Math.random() * (activities.length));
+        const newActivity = activities[randomIndex];
 
         client.user.setActivity(newActivity);
     }, 10000);
