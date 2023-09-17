@@ -88,6 +88,10 @@ setInterval(async function() {
     }
 }, 60000)
 
+setInterval(async function() {
+    fetch("https://uptime.local.matzhilven.com/api/push/8Km4krxHIB?status=up&msg=OK&ping=")
+}, 60000)
+
 const activities = [
     "el senior de la nocheeeee", 
 	"el terror de la nocheeeee",
