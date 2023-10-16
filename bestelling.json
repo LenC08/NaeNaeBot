@@ -1,17 +1,4 @@
 {
-  "Dag": "Vrijdag",
-  "bestelling": [
-    {
-      "name": "Len",
-      "value": "smos ine"
-    },
-    {
-      "name": "JoBRG",
-      "value": "grote spekker"
-    },
-    {
-      "name": "Mathias.",
-      "value": "grote spekker"
-    }
-  ]
+  "Dag": "Donderdag",
+  "bestelling": []
 }

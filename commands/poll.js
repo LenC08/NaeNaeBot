@@ -1,53 +1,45 @@
-const { SlashCommandBuilder, SlashCommandUserOption } = require('@discordjs/builders');
-const { MessageActionRow, MessageButton, GuildMember } = require('discord.js');
+const {SlashCommandBuilder} = require('@discordjs/builders');
+const {ActionRowBuilder, ButtonBuilder, ButtonStyle} = require('discord.js');
 let memberArray = require("../members.json")
 let serverUsers = []
 let rowArray = []
-let groep0 = []
-let groep1 =[]
-let groep2 =[]
-let groep3 =[]
-let groep4 =[]
 
 function fetchMembers() {
-	for (i=0 ; i < memberArray.length; i++) {
-		serverUsers.push(memberArray[i].displayName)
-	}
+  for (let i = 0; i < memberArray.length; i++) {
+    serverUsers.push(memberArray[i].displayName)
+  }
 }
 
 function sorteerMembers() {
-	let j = 0
-	let g = "groep"
-	for (i=0; i < serverUsers.length; i++) {		
-		if (eval(g + j + ".length === 5")) {
-			eval("rowArray.push(new MessageActionRow().addComponents(" + g + j + "))")
-			j++
-		} else if (i === serverUsers.length - 1 ) {
-			eval("rowArray.push(new MessageActionRow().addComponents(" + g + j + "))")
-		} else {
-		    eval(g + j + ".push(new MessageButton().setLabel('" + serverUsers[i] + "').setStyle('SUCCESS').setCustomId('" + serverUsers[i] + "'))")
-		}	   
-	}
+  for (let i = 0; i < serverUsers.length; i++) {
+    if (i % 5 === 0) {
+      rowArray.push(new ActionRowBuilder())
+    }
+    rowArray[rowArray.length - 1].addComponents(
+      new ButtonBuilder()
+        .setCustomId(serverUsers[i])
+        .setLabel(serverUsers[i])
+        .setStyle(ButtonStyle.Primary)
+    )
+  }
 }
 
-function createButtons() {
-		if (serverUsers.length > 25) {
-			interaction.reply("te veel members")
-		} else  {
-			sorteerMembers()
-		} 
+function createButtons(interaction) {
+  if (serverUsers.length > 25) {
+    interaction.reply("te veel members")
+  } else {
+    sorteerMembers()
+  }
 }
 
 
 module.exports = {
-	data: new SlashCommandBuilder()
-		.setName('test')
-		.setDescription('uwu'),
-	async execute(interaction) {
-		fetchMembers()
-		createButtons()
-		interaction.reply({ content: '**Stemmen maar!!! :yum:**', components: rowArray })
-		
-    }
-
+  data: new SlashCommandBuilder()
+    .setName('test')
+    .setDescription('uwu'),
+  async execute(interaction) {
+    fetchMembers()
+    createButtons(interaction)
+    interaction.reply({content: '**Stemmen maar!!! :yum:**', components: rowArray})
+  }
 }
