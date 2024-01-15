@@ -98,7 +98,7 @@ setInterval(async function () {
     await client.channels.cache.get("1122975932890755215").send("wysi https://tenor.com/view/aireu-wysi-osu-727-cookiezi-gif-20763403")
   }
 
-  if (now.getHours() === 8 && now.getMinutes() === 0) {
+  if (now.getHours() === 7 && now.getMinutes() === 0) {
     await client.channels.cache.get("968192015378567249").send("Goedemorgen! Het is tijd om je broodjes te bestellen! Gebruik `/addbroodje` om te beginnen!")
     await client.channels.cache.get("968192015378567249").send("https://tenor.com/view/good-morning-sigma-gm-sigma-wolf-pack-rise-and-grind-alpha-male-gif-18436891353706736629")
   }
